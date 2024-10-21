@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'accent-font';
+	src: url('./fonts/lixdu-font/Lixdu-p7Pn1.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'secondary-font';
+	src: url('./fonts/lixdu-font/Lixdu-p7Pn1.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'body-font';
+	src: url('./fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+}
+.font-accent{
+	font-family: 'accent-font';
+}
+.font-secondary{
+	font-family: 'secondary-font';
+}
+
+html {
+  font-size: 16px; /* You can set a default size */
+}
+body{
+	font-size: 1rem;
+	font-family: 'body-font';
+}
+@keyframes shake {
+	0%, 100% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(-5px);
+	}
+	50% {
+		transform: translateX(5px);
+	}
+	75% {
+		transform: translateX(-5px);
+	}
+}
+
+#progress {
+	animation: shake 0.5s ease-in-out infinite;
+}
